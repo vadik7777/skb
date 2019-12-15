@@ -19,6 +19,8 @@ dependencies {
 	implementation 'org.codehaus.groovy:groovy'
 	runtimeOnly 'com.h2database:h2'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.14'
+	providedRuntime 'javax.servlet:jstl:1.2'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
